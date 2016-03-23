@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>盈利宝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+	<link rel="stylesheet" href="../css/mui.css">
+    <link href="../css/common.min.css" rel="stylesheet" />
+    <link href="../css/register.min.css" rel="stylesheet" />
+    <script src="../js/register.min.js" type="text/javascript" language="javascript"></script>
+    <script src="../js/mui.min.js"></script>
+</head>
+<body>
+    <header class="site-top">
+        <a href="" class="btn btn-back"></a>
+        <span class="page-title">登录</span>
+    </header>
+
+    <section class="register-main">
+    	<p class="ying"><img src="../images/ying.png" width="68" height="66" /></p>
+        <div class="txtbox-wrap">
+        	<label class="user"></label>
+            <input type="text" placeholder="手机/用户名/身份证/邮箱" />
+        </div>
+        <div class="txtbox-wrap txtbox-wrap-last">
+            <label class="pwd"></label>
+            <input type="password" placeholder="请输入登录密码" />
+            <i class="eye eye-close"></i>
+        </div>
+        <div class="panel-box">
+        	<p class="mt25 tc"><a id="toastBtn" class="btn btn-h90">登录</a></p>
+            <p class="mt15">
+                <a href="" class="link f12 fr">忘记密码？</a>
+                <a href="" class="link f12 fl">快速注册</a>
+            </p>
+        </div>
+    </section>
+	<script type="text/javascript" charset="utf-8">
+		document.getElementById("toastBtn").addEventListener('tap', function() {
+			var waitIco = '<a><span class="wait-ico"></span></a><br />';
+			mui.toast(waitIco+'登录中');
+		});
+		</script>
+</body>
+</html>

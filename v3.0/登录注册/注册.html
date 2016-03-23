@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>盈利宝</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+        <link rel="stylesheet" href="../css/common.min.css">
+        <link rel="stylesheet" href="../css/register.min.css">
+        <script src="../js/register.min.js" type="text/javascript" language="javascript"></script>
+	</head>
+
+	<body class="mui-fullscreen">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+        <!--单页面开始 注册1-->
+		<div id="register" class="mui-page">
+			<!--页面标题栏开始-->
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-center mui-title">注册</h1>
+			</div>
+			<!--页面标题栏结束-->
+            <!--页面主内容区开始-->
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<section class="register-main mui-page-content">
+                            <div class="txtbox-wrap">
+                                <label class="tel"></label>
+                                <input type="text" placeholder="11位手机号码" />
+                            </div>
+                            <div class="txtbox-wrap">
+                                <label class="yzm-img"></label>
+                                <input class="w50" type="text" placeholder="图片验证码" />
+                                <img class="fr" src="../images/yzm.jpg" width="68" height="44" />
+                            </div>
+                            <div class="txtbox-wrap txtbox-wrap-last">
+                                <label class="yzm-tel"></label>
+                                <input type="text" class="w50" placeholder="手机验证码" />
+                                <input type="button" class="get-code fr" value="获取验证码" />
+                            </div>
+                            <div class="panel-box">
+                                <p class="kind-tip f12 col75 tr">未收到短信验证码？<a class="get-voice link ml5">获取语音验证码</a></p>
+                            </div>
+                            <div class="panel-box">
+                                <p class="mt25 tc"><a href="#next" class="btn btn-h90">下一步</a></p>
+                            </div>
+                            <p class="mt15 tc f12 col000">注册即表示您同意&nbsp;<a class="link" href="">《金融界网站注册协议》</a></p>
+                        </section>
+					</div>
+				</div>
+			</div>
+			<!--页面主内容区结束-->
+		</div>
+		<!--单页面结束-->
+        <!--单页面开始 注册2-->
+		<div id="next" class="mui-page">
+			<!--页面标题栏开始-->
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</button>
+				<h1 class="mui-center mui-title">注册</h1>
+			</div>
+			<!--页面标题栏结束-->
+            <!--页面主内容区开始-->
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<section class="register-main mui-page-content">
+                            <div class="txtbox-wrap txtbox-wrap-last">
+                                <label class="pwd"></label>
+                                <input type="password" placeholder="设置登录密码" />
+                                <i class="eye eye-close"></i>
+                            </div>
+                            <div class="panel-box">
+                            	<p class="col999 f12 mt5"><i class="warn-ico"></i>密码为6-20位字母、数字或符号</p>
+                            </div>
+                            <div class="panel-box">
+                                <p class="mt25 tc"><a class="btn btn-h90">确认</a></p>
+                            </div>
+                        </section>
+					</div>
+				</div>
+			</div>
+			<!--页面主内容区结束-->
+		</div>
+		<!--单页面结束-->
+
+		
+
+	</body>
+	<script src="../js/mui.min.js "></script>
+	<script src="../js/mui.view.js "></script>
+	
+	<script>
+		mui.init();
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#register'
+		});		
+	</script>
+</html>
